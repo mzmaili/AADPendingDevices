@@ -32,6 +32,8 @@ Due to the fact that it is not easy to search for all PENDING devices in Azure A
 
 # User experience:
 
+- If there is no pending devices in AAD tenant: 
+![Alt text](https://github.com/mzmaili/AADPendingDevices/blob/master/csv.PNG "PS output")
 
 - CSV file output: 
 ![Alt text](https://github.com/mzmaili/AADPendingDevices/blob/master/csv.PNG "CSV output")
