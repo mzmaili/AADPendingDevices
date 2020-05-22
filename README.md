@@ -43,4 +43,64 @@ Due to the fact that it is not easy to search for all PENDING devices in Azure A
 ![Alt text](https://github.com/mzmaili/AADPendingDevices/blob/master/Excel.PNG "Excel output")
  
 
+ ```azurepowershell
+.SYNOPSIS 
+    Get-AADPendingDevices PowerShell script. 
  
+.DESCRIPTION 
+    Get-AADPendingDevices.ps1 is a PowerShell script helps to get all PENDING devices in Azure AD tenant. 
+ 
+ 
+.AUTHOR: 
+    Mohammad Zmaili 
+ 
+.PARAMETER 
+    OnScreenReport 
+    Displays PENDING devices on PowerShell screen. 
+ 
+.PARAMETER 
+    SavedCreds 
+    Uses the saved credentials option to connect to MSOnline. 
+    You can use any normal CLOUD only user who is having read permission to verify the devices.  
+    But you have to use a global admin when using clean parameter. 
+    Notes: - This parameter is very helpful when automating/running the script in task scheduler. 
+           - Update the saved credentials under the section "Update Saved credentials". 
+ 
+.PARAMETER 
+    CleanDevices 
+    Remove PENDING devices. 
+ 
+ 
+.PARAMETER 
+    ExcelReport 
+    Generates Excel report and saves the result into it, if this switch not selected script will generate a CSV report. 
+ 
+ 
+.EXAMPLE 
+    .\Get-AADPendingDevices 
+    Retreives all PENDING devices in your tenant, and generates a CSV file with the output. 
+ 
+ 
+.EXAMPLE 
+    .\Get-AADPendingDevices.ps1 -CleanDevices -OnScreenReport 
+    Retreives all PENDING devices in your tenant, and generates a CSV file with the output, and displays the result on PowerShell screen. 
+ 
+ 
+.EXAMPLE 
+    .\Get-AADPendingDevices -CleanDevices 
+    Deletes PENDING devices from the tenant 
+ 
+ 
+.EXAMPLE 
+    .\Get-AADPendingDevices -SavedCreds 
+    Retreives all PENDING devices in your tenant, uses the saved credentials to access MSOnline. 
+    Note: You can automate running this script using task scheduler. 
+ 
+ 
+Script Output: 
+----------- 
+ 
+=================================== 
+|Azure AD Pending Devices Summary:| 
+=================================== 
+Number of affected devices: 7  
