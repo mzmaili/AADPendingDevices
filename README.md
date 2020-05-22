@@ -18,19 +18,19 @@ Due to the fact that it is not easy to search for all PENDING devices in Azure A
 
  
 
-# Why is this script useful?
+#### Why is this script useful?
 - To check pending devices in Azure AD tenant.
 - To generate a powerful Excel report with the pending devices.
 - To automate Azure AD pending devices cleanup procedure by running it in a scheduled task.
 - To show the result on CSV or/and Grid View or/and Excel, so you can easily search in the result. 
 
-# What does this script do?
+#### What does this script do?
 - Verifies the pending devices as per the entered threshold days.
 - Cleans pending devices from Azure AD.
 - Checks if ‘MSOnline‘ module is installed and updated. If not, it takes care of this.
 - Checks if ‘ImportExcel‘ module is installed. If not, it installs and imports it. 
 
-# User experience:
+#### User experience:
 
 - If there is no pending devices in AAD tenant: 
 
