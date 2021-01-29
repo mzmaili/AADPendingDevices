@@ -1,4 +1,4 @@
-# AADPendingDevices
+# AAD Pending Devices
 
 Pending devices indicates that the device has been synchronized successfully using Azure AD connect form your on-premise Active Directory and it is ready for device registration, but is not registered to Azure AD yet.
 
